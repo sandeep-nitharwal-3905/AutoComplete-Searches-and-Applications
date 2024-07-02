@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="./index.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Autocomplete</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="top" id="heading">Autocomplete and Search Application</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="container top">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Type City Name "
+            id="text-box"
+          />
+          <button type="submit" id="search-btn">
+            <i class="fa fa-search" onclick="search()"></i>
+          </button>
+        </div>
+        <ul id="list" class="list-group"></ul>
+      </div>
+    </main>
+
+    <script src="./trie.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

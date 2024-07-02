@@ -1,0 +1,78 @@
+:root
+{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body
+{
+    background: url(photo2.jpg);
+    height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    opacity: 0.85;
+}
+
+.top
+{
+    margin-top: 60px;
+}
+
+main
+{
+    width: 100%;
+}
+
+#heading
+{
+    font-family: 'Baloo Bhai 2' ,cursive;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    animation: animate 2s ease-in-out infinite alternate;
+    font-weight:200;
+}
+
+@keyframes animate
+{
+    from
+    {
+        text-shadow: 0 0 20px #289aab;
+    }
+    to
+    {
+        text-shadow: 0 0 30px #289aab, 0 0 10px #d2d2d2;
+    }
+}
+
+#text-box
+{
+    margin-right: 2px;
+}
+
+#search-btn
+{
+    float: left;
+    width: 10%;
+    /* padding: 10px; */
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+}
+
+.clickable
+{
+    cursor: pointer;
+}
+
+li:hover
+{
+    background-color: rgb(220, 220, 220);
+}
